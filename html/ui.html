@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+    <!-- Progressbar Modal -->
+    <div id="progressbar-container">
+        <img id="progressbar-img" src="" alt="Item" style="display:none; width:48px; height:48px; object-fit:contain; margin-bottom:10px;" />
+        <div id="progressbar-desc"></div>
+        <div id="progressbar-bar-bg">
+            <div id="progressbar-bar"></div>
+        </div>
+        <div id="progressbar-time"></div>
+    </div>
+    <!-- Sell Item Modal -->
+    <div id="sellitem-modal">
+        <img id="sellitem-img" src="" alt="Item" />
+        <div id="sellitem-name"></div>
+        <div id="sellitem-input-group">
+            <input type="number" id="sellitem-amount" min="1" value="1" />
+            <button id="sellitem-all">Sell All</button>
+        </div>
+        <div id="sellitem-actions">
+            <button id="sellitem-confirm">Sell</button>
+            <button id="sellitem-cancel">Cancel</button>
+        </div>
+    </div>
+    <script src="ui.js"></script>
+</body>
+</html> 

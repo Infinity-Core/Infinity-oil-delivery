@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+#progressbar-container {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    background: rgba(0,0,0,0.85);
+    border-radius: 12px;
+    padding: 32px 32px 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+#progressbar-desc {
+    color: #fff;
+    font-size: 1.3em;
+    margin-bottom: 18px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#progressbar-bar-bg {
+    width: 350px;
+    height: 18px;
+    background: #222;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+#progressbar-bar {
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    border-radius: 9px 0 0 9px;
+    transition: width 0.1s linear;
+}
+#progressbar-time {
+    color: #fff;
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    margin-top: 2px;
+}
+#sellitem-modal {
+    display: none;
+    background: rgba(0,0,0,0.85);
+    border-radius: 12px;
+    padding: 32px 32px 24px 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    box-shadow: 0 0 24px #000a;
+    z-index: 10000;
+    font-family: Arial, sans-serif;
+}
+#sellitem-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+#sellitem-name {
+    color: #fff;
+    font-size: 1.3em;
+    margin-bottom: 18px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#sellitem-input-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+#sellitem-amount {
+    width: 80px;
+    font-size: 1.1em;
+    padding: 4px;
+    border-radius: 9px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: none;
+}
+#sellitem-all, #sellitem-confirm, #sellitem-cancel {
+    background: #fff;
+    color: #181818;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background 0.2s, color 0.2s;
+}
+#sellitem-all:hover, #sellitem-confirm:hover {
+    background: #222;
+    color: #fff;
+}
+#sellitem-cancel {
+    background: #c0392b;
+    color: #fff;
+}
+#sellitem-cancel:hover {
+    background: #181818;
+    color: #fff;
+}
+#sellitem-actions {
+    display: flex;
+    gap: 12px;
+}
+#sellitem-amount::-webkit-outer-spin-button,
+#sellitem-amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#sellitem-amount {
+    -moz-appearance: textfield;
+} 
