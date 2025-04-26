@@ -50,8 +50,6 @@ Developed by BZK Scripts. Special thanks to the Infinity Core team.
 - ensure that the dependancies are added and started
 - add infinity-oil-delivery to your resources folder
 - add images to your "\infinity-needs\inventory\items"
-# Version oficial thanks
-this is a reconverted work from RexShackGaming & Sadicius by me, WickedStarlight♥
 
 # Item Setup
 To use the oil system, you must create the 'oil' item in your inventory system:
